@@ -6,7 +6,7 @@
 
 <ul>
   <li><a href="#features">Features</a></li>
-  <li><a href="#prerequisites">Dependencies</a></li>
+  <li><a href="#dependencies">Dependencies</a></li>
   <li><a href="#installation">Installation</a></li>
  
 </ul>
@@ -57,14 +57,10 @@
   <li>Node.js (version 12 or higher)</li>
   <li>MongoDB (running instance or connection string)</li>
   <li>NPM (Node Package Manager)</li>
+  <li>Express js</li>
+  <li>Bootstrap 5 </li>
 </ul>
 <h2>Practices</h2>
 
 <p>
-This project follows the Model-View-Controller (MVC) architectural pattern, utilizes middleware, and employs Environment variables (.env) for configuration.</p> 
-
-
-
-
-
-
+This project follows the Model-View-Controller (MVC) architectural pattern, utilizes middleware, and employs Environment variables (.env) for configuration.</p>
