@@ -61,7 +61,9 @@
 <h2>Practices</h2>
 
 <p>
-This project follows the Model-View-Controller (MVC) architectural pattern, utilizes middleware, and employs environment variables (.env) for configuration.</p>
+This project follows the Model-View-Controller (MVC) architectural pattern, utilizes middleware, and employs Environment variables (.env) for configuration.</p> 
+
+
 
 
 
