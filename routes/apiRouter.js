@@ -88,7 +88,7 @@ Router.post("/Addcourse", verifyToken, (req, res) => {
   });
 });
 
-Router.get("/api/showallcourses", verifyToken, (req, res) => {
+Router.get("/showallcourses", verifyToken, (req, res) => {
   let studentid = res.locals.object.foundStudent._id;
 
   Student.findById(studentid)
@@ -107,7 +107,7 @@ Router.get("/api/showallcourses", verifyToken, (req, res) => {
     });
 });
 
-Router.delete("/api/deletecourse/:courseId", verifyToken, (req, res) => {
+Router.delete("/deletecourse/:courseId", verifyToken, (req, res) => {
   const studentId = res.locals.object.foundStudent._id;
   const courseId = req.params.courseId;
 
