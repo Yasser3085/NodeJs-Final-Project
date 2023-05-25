@@ -1,6 +1,6 @@
 # Yasser-alreshoodi-js-bootcamp-backend-final-project
 
-#Instructor Dashboard
+##Instructor Dashboard
 This is a learning management system called "Instructor Dashboard" built using Node.js, Express.js, Bootstrap, and MongoDB. It provides an intuitive web interface for instructors to manage courses, register new users, and view relevant course information. This README file provides an overview of the project and instructions for setting it up.
 
 Table of Contents
