@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        -45deg,
+        rgba(119, 117, 117, 0),
+        rgb(52, 68, 106),
+        rgba(0, 0, 0, 0.239)
+      );
+      background-size: 400% 400%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      height: 100vh;
+      width: 100%;
+      animation: animate 15s ease infinite;
+    }
+    label {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .login-box {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      margin: 20px auto;
+      -webkit-transform: translate(-50%, -55%);
+      -ms-transform: translate(-50%, -55%);
+      transform: translate(-50%, -55%);
+      background: #1e1e1e;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    .login-box p:first-child {
+      margin: 0 0 30px;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .login-box .user-box {
+      position: relative;
+    }
+
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+    .login-box .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: #fff;
+      font-size: 12px;
+    }
+    .button1 {
+      display: inline-block;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #fff;
+      margin: 1rem auto;
+      padding: 0.7rem 2rem;
+      border-radius: 30em;
+      border-style: none;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background-color: transparent;
+      box-shadow: 0 0 3px rgba(255, 252, 252, 0.35);
+    }
+
+    .button1::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      transform: translateX(-101%);
+      transition: all 0.3s ease;
+      z-index: -1;
+    }
+
+    .button1:hover {
+      color: #272727;
+      transition: all 0.3s ease;
+    }
+
+    .button1:hover::before {
+      transform: translateX(0);
+    }
+
+    @-webkit-keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+      50%,
+      100% {
+        left: 100%;
+      }
+    }
+
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+      50%,
+      100% {
+        left: 100%;
+      }
+    }
+    @keyframes animate {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @-webkit-keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+      50%,
+      100% {
+        top: 100%;
+      }
+    }
+
+    @keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+      50%,
+      100% {
+        top: 100%;
+      }
+    }
+
+    @-webkit-keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+      50%,
+      100% {
+        right: 100%;
+      }
+    }
+
+    @keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+      50%,
+      100% {
+        right: 100%;
+      }
+    }
+
+    @-webkit-keyframes btn-anim4 {
+      0% {
+        bottom: -100%;
+      }
+      50%,
+      100% {
+        bottom: 100%;
+      }
+    }
+
+    @keyframes btn-anim4 {
+      0% {
+        bottom: -100%;
+      }
+      50%,
+      100% {
+        bottom: 100%;
+      }
+    }
+
+    .login-box p:last-child {
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <%- include('navbar.ejs') %>
+    <div class="login-box">
+      <p style="font-family: Arial, Helvetica, sans-serif">Register</p>
+      <form action="/ins/instructorregister" method="post">
+        <div class="user-box">
+          <input
+            required=""
+            name="instructorname"
+            type="text"
+            autocomplete="off"
+          />
+          <label>Instructor Name</label>
+        </div>
+        <div class="user-box">
+          <input required="" name="instructorpassword" type="password" />
+          <label>Password</label>
+        </div>
+        <div>
+          <button class="button1">SIGN UP</button>
+        </div>
+      </form>
+      <p>
+        have an account? <a href="/ins/instructorlogin" class="a2">Login</a>
+      </p>
+    </div>
+  </body>
+</html>
